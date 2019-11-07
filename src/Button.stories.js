@@ -3,10 +3,10 @@ import { storiesOf } from '@storybook/react';
 
 import Button from './Button';
 
-storiesOf('Button', module).add('with default background', () => (
+storiesOf('Button', module)
+  .addWithJSX('with default background', () => (
   <Button>Default styles</Button>
-));
-
-storiesOf('Button', module).add('with background teal', () => (
-  <Button bg="teal">Hola mundo!</Button>
-));
+  ))
+  .addWithJSX('with background teal', () => (
+    <Button bg="teal">Hola mundo!</Button>
+  ));
